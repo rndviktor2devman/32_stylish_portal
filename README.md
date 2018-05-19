@@ -1,10 +1,23 @@
 # Shared CSS Library
 
-[TODO]
+Description of configuration nginx server for serving same "*.css" file on different websites
+Useful for creating web portals
 
 # How to Test
 
-[TODO]
+* Install NGINX server and start service
+* Install requirements
+
+    ``pip install -r requirements.txt``
+* Fill out the nginx template file
+
+    ``css_file_name="style.css" path_to_css_file="css_file_path"  first_site="first_url" second_site="second_url" envtpl < nginx.conf.tpl > nginx.conf``
+* Copy configuration of nginx to etc
+
+    ``cp nginx.conf /etc/nginx/``
+* Reload the NGINX
+
+    ``sudo nginx -s reload``
 
 # Project Goals
 
