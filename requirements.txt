@@ -1,1 +1,1 @@
-envtpl
+envtpl==0.6.0
